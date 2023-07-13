@@ -18,7 +18,7 @@ export default function ContactForm() {
 
   const handleSubmit = evt => {
     evt.preventDefault();
-    const newContact = { id: shortid.generate(), name, number };
+    const newContact = { name, number };
 
     if (
       contacts.find(
